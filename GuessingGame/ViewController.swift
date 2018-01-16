@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     
     // MARC Properties (variables)
+    var game = GuessingGame()
     
     
     // MARC Overrides
@@ -22,6 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("The number to guess is:")
+        print(game.numberToGuess)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +49,12 @@ class ViewController: UIViewController {
            // if the input was text (e.g. "five" we can't make an integer so stop and return (exit) the function)
             return
         }
+        //Print the given number
+       print(intagerGiven)
+        
+        // the number to guess is
+        print("The number to guess is:")
+        print(game.numberToGuess)
         
     }
     
