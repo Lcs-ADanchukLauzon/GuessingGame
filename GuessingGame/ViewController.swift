@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     // MARC Outlets
     @IBOutlet weak var numberGuessed: UITextField!
+    @IBOutlet weak var messageToUser: UILabel!
     
     
     // MARC Properties (variables)
@@ -56,7 +57,11 @@ class ViewController: UIViewController {
         print("The number to guess is:")
         print(game.numberToGuess)
         
+        messageToUser.text = game.checkGuessGiveFeedback(guess: intagerGiven)
+        
     }
+    
+    
     
     
     // MARC: Custom function(s)
