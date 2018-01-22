@@ -24,6 +24,7 @@
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="guessSubmited:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJ3-F3-6ek"/>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBM-LN-BoP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-LA-OXR">
@@ -42,6 +43,14 @@ Guess it!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HS-Ei-coj">
+                                <rect key="frame" x="95" y="269" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press to replay"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eR-9M-ral"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +58,7 @@ Guess it!</string>
                     <connections>
                         <outlet property="messageToUser" destination="Ldb-LA-OXR" id="OWk-cO-5GK"/>
                         <outlet property="numberGuessed" destination="FoS-ym-j6G" id="C9V-IQ-I15"/>
+                        <outlet property="resetGame" destination="3HS-Ei-coj" id="tPi-AL-qBx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
