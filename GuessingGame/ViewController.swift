@@ -63,16 +63,16 @@ class ViewController: UIViewController {
         // Is the game over?
         if messageToUser.text == "You got it, Good job!" {
             resetGame.isHidden = false
-        } else {
-            resetGame.isHidden = true
         }
         
     }
     // Reset button
-    @IBAction func resetGame(_ sender: Any) {
-         game.numberToGuess = Int(arc4random_uniform(501))
-   
+    @IBAction func resetButton(_ sender: Any) {
+        game.numberToGuess = Int(arc4random_uniform(501))
+        
+        resetGame.isHidden = true
     }
+    
     
     
   

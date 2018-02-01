@@ -24,7 +24,6 @@
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="guessSubmited:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TJ3-F3-6ek"/>
-                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBM-LN-BoP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-LA-OXR">
@@ -48,7 +47,7 @@ Guess it!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Press to replay"/>
                                 <connections>
-                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eR-9M-ral"/>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Myd-vw-O6E"/>
                                 </connections>
                             </button>
                         </subviews>
