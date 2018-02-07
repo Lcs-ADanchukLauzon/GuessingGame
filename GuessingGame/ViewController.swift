@@ -69,8 +69,8 @@ class ViewController: UIViewController {
     // Reset button
     @IBAction func resetButton(_ sender: Any) {
         game.numberToGuess = Int(arc4random_uniform(501))
-        
         resetGame.isHidden = true
+        game.numbersGuessed  = []
     }
     
     
